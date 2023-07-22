@@ -30,7 +30,6 @@ $package\
 $docker_context\
 [](fg:#06969A bg:#33658A)\
 $time\
-$battery\
 [](fg:#33658A)\
 $character\
 """
@@ -193,7 +192,7 @@ style = "bg:#86BBD8"
 format = '[ $symbol$version$workspace]($style) '
 
 [package]
-symbol = "⬢"
+symbol = "⬢ "
 style = "bg:#86BBD8"
 format = '[$symbol$version]($style)'
 
