@@ -117,13 +117,13 @@ format = '[\($state( $progress_current of $progress_total)\)]($style) '
 conflicted = "⚔️ "
 ahead = "↑ ×${count}"
 behind = "↓ ×${count}"
-diverged = "🔱×${↑ ahead_count}×${↓ behind_count}"
+diverged = "🔱 ×${↑ ahead_count}×${↓ behind_count}"
 untracked = " ×${count}"
 stashed = "📦"
-modified = "📝×${count}"
-staged = "🗃️×${count}"
-renamed = "📛×${count}"
-deleted = "🗑️×${count}"
+modified = "📝 ×${count}"
+staged = "🗃️ ×${count}"
+renamed = "📛 ×${count}"
+deleted = "🗑️ ×${count}"
 style = "bg:#FCA17D"
 format = '[$all_status$ahead_behind ]($style)'
 
@@ -131,7 +131,7 @@ format = '[$all_status$ahead_behind ]($style)'
 added_style = "bg:#FCA17D"
 deleted_style = "bg:#FCA17D"
 disabled = false
-format = '([+$added]($added_style))([ -$deleted]($deleted_style))'
+format = '([+$added]($added_style))([-$deleted]($deleted_style))'
 
 
 [golang]
@@ -172,7 +172,7 @@ style = "bg:#86BBD8"
 format = '[ $symbol($version) ]($style)'
 
 [rust]
-symbol = ""
+symbol = " "
 style = "bg:#86BBD8"
 format = '[ $symbol($version) ]($style)'
 
@@ -182,12 +182,12 @@ style = "bg:#86BBD8"
 format = '[ $symbol($version) ]($style)'
 
 [python]
-symbol = "🐍"
+symbol = "🐍 "
 style = "bg:#86BBD8"
 format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 
 [terraform]
-symbol = "💠"
+symbol = "💠 "
 style = "bg:#86BBD8"
 format = '[ $symbol$version$workspace]($style) '
 
